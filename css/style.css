@@ -1,0 +1,35 @@
+.header navbar-brand img{
+    width:80px;
+    height:80px;
+}
+.bg-light{
+    color: white!important;
+}
+header{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.container h1{
+    text-align: center;
+    margin:40px 0;
+}
+.category{
+    padding-bottom:40px;
+}
+.category-disc{
+    padding:40px;
+}
+.divider{
+    height:1px;
+    border-bottom: 1px solid rgb(230,228,228);
+    margin:40px;
+}
+.products{
+    background: rgb(240, 236, 236);
+    pagging:40px 0;
+}
+.btn-primary{
+margin-top:40px;
+}
+.form-group-center{
+    text-align: center;
+}
