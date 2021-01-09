@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
+    align-items: center;
+    padding: 7px 20px;
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 1;
+}
+
+.logo {
+    padding: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.menu ul{
+  list-style: none;  
+  display: flex;
+}
+
+.menu ul a{
+   text-decoration: none;
+   color: black;
+   display: block;
+   padding: 10px;
+   letter-spacing: 2px;
+}
+
+.menu ul a:hover{
+    background: rgb(219, 218, 218);
+ }
+.logo:hover {
+    background: rgb(219, 218, 218);
+}
+
+.cover{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.cover img {
+    width: 100%;
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 1500px;
+    margin:0 auto;
+}
+
+.container h2 {
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.projects .items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.projects .house {
+   position: relative;
+   margin: 10px; 
+   flex-basis: 20%;
+   flex-grow: 1;
+}
+
+.projects .house img{
+    width: 100%;
+ }
+
+.projects .house .label{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 10px;
+}
+.about p{
+    font-family: Verdana,sans-serif;
+    margin:15px 0px;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.items .role{
+    width:300px;
+    margin:15px;
+    flex-basis: 20%;
+   flex-grow: 1;
+}
+.items .role img{
+    width:100%;
+    filter:grayscale(70%);
+}
+.name{
+    font-size: 24px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    margin:10px 0px;
+}
+.position{
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    margin:15px 0px;
+    color:gray;
+}
+.position p{
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    
+}
+.role button{
+    border: none;
+    width: 100%;
+    padding:10px 0px;
+    cursor: pointer;
+    margin:15px 0px;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+}
+.role button:hover{
+    background:rgb(170, 169, 169);
+}
+.form{
+    margin-bottom: 10px;
+}
+.form p{
+    font-family: Verdana,sans-serif;
+    margin:10px 0;
+}
+.form input{
+    width:100%;
+    padding: 8px;
+    margin:5px;
+    border:1px solid rgb(197, 193, 193)
+    font-family: Verdana,sans-serif;
+}
+.form button{
+    background: black;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    margin-top:10px;
+}
+.map img{
+    width: 100%;
+}
+footer{
+    background: #000;
+    color:white;
+    padding:20px;
+    text-align: center;
+}
+
+/* 1000 */
+@media(max-width:1000px){
+    .projects .house { 
+        flex-basis: 40%;
+        flex-grow: 1;
+     }
+     .items .role{
+        flex-basis: 40%;
+   flex-grow: 1;
+}
+}
+/* 600 */
+@media(max-width:600px){
+    .menu{
+        display:none;
+    }
+    .projects .house { 
+        flex-basis: 90%;
+        flex-grow: 1;
+     }
+     .items .role{
+        flex-basis: 90%;
+   flex-grow: 1;
+}
+}
+
+    

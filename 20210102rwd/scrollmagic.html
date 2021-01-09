@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="images">
+        <img src="http://via.placeholder.com/500" alt="">
+        <img src="http://via.placeholder.com/500" alt="">
+        <img src="http://via.placeholder.com/500" alt="">
+        <img src="http://via.placeholder.com/500" alt="">
+        <img src="http://via.placeholder.com/500" alt="">
+        <img src="http://via.placeholder.com/500" alt="">
+        <img src="http://via.placeholder.com/500" alt="">
+        <img src="http://via.placeholder.com/500" alt="">
+        <img src="http://via.placeholder.com/500" alt="">
+        <img src="http://via.placeholder.com/500" alt="">
+        <img src="http://via.placeholder.com/500" alt="">
+        <img src="http://via.placeholder.com/500" alt="">
+    </div>
+    <style>
+    img{
+        opacity:0;
+        transition:all 1.2s ease-in;
+    }
+    .fadeIn{
+        opacity:1;
+    }
+    </style>
+
+<script src="./jquery/jquery-3.5.1.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script>
+
+    $(document).ready(function(){
+        var controller = new ScrollMagic.Controller();
+        $(".images img").each(function(){
+            new ScrollMagic.Scene({
+                triggerElement:this,
+                triggerHook:1,
+                reverse:true,
+})
+    .setClassToggle(this,'fadeIn')
+    .addTo(controller);
+})
+    })
+</script>
+</body>
+</html>

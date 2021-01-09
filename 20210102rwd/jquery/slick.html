@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../slick/slick.css">
+    <link rel="stylesheet" href="../slick/slick-theme.css">
+    <title>Document</title>
+    <style>
+        .slide div{
+            height:700px;
+        }
+        .slide img{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow">
+        <div class="slide">
+            <div><img src="https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""></div>
+            <div><img src="https://images.pexels.com/photos/312420/pexels-photo-312420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""></div>
+            <div><img src="https://images.pexels.com/photos/1405761/pexels-photo-1405761.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""></div>
+        </div>
+    </div>
+    <script src="./jquery-3.5.1.js"></script>
+    <script src="../slick/slick.js"></script>
+    <script>$(document).ready(function(){
+        $('.slide').slick({
+          autoplay:true,
+          fade:true,
+          autoplayspeed:2000,
+          speed:4000,
+          dots:true,
+        });
+      });</script>
+</body>
+</html>
