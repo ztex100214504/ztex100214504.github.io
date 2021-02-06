@@ -307,19 +307,19 @@ display: flex;
 .scroll-down{
   bottom: 100px;
 }
-}
 @media(max-width:414px){
+  .main{
+        margin-top:100px
+      }
   .section.big-photo{
     width:100%;
     margin:0px;
     opacity: 0;
     }
-    .section.big-photo-mobile{
+  .section.big-photo-mobile{
       width:100%;
       margin:0px;
       opacity: 1;
-      }
-      .main{
-        margin-top:100px
-      }
-}
+    }
+    .scroll-down{
+        bottom: 10px;
