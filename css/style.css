@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    margin: 0px;
   }
 header{
   position: fixed;
@@ -27,11 +28,18 @@ header{
 }
 .main{
   position: relative;
+  margin-top: 50px;
 }
-.big-photo{
+.section.big-photo{
 width:100%;
 margin:0px;
+opacity: 1;
 }
+.section.big-photo-mobile{
+  width:100%;
+  margin:0px;
+  opacity: 0;
+  }
 .scroll{
   background: rgb(255, 255, 255);
   border:1px solid rgb(238, 13, 50);
@@ -301,7 +309,17 @@ display: flex;
 }
 }
 @media(max-width:414px){
-  
-  }
-}
+  .section.big-photo{
+    width:100%;
+    margin:0px;
+    opacity: 0;
+    }
+    .section.big-photo-mobile{
+      width:100%;
+      margin:0px;
+      opacity: 1;
+      }
+      .main{
+        margin-top:100px
+      }
 }
