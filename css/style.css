@@ -14,6 +14,7 @@ header{
 .header navbar-brand img{
     width:80px;
     height:80px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
 .bg-light{
     color: rgb(171, 204, 247)!important;
@@ -22,9 +23,6 @@ header{
     font-family: 微軟正黑體;
     font-weight:bold;
     color:black;
-}
-header{
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
 .main{
   position: relative;
@@ -298,28 +296,28 @@ display: flex;
     width: 100%;
   }
   .ft-nav .ft-nav-bg{
-    opacity: 0;
+    display: none;
   }
   .big-photo{
     display: none;
 }
-@media(max-width:1000px){
+.main{
+  margin-top:100px;
+}
+.section.big-photo{
+    opacity: 0;
+    }
+.section.big-photo-mobile{
+      opacity: 1;
+}
+.scroll-down{
+      bottom: 50px;
+    }
+@media(min-width:420px) and (max-width:1000px){
 .scroll-down{
   bottom: 100px;
 }
-@media(max-width:414px){
+@media(max-width:420px){
   .main{
-        margin-top:100px
-      }
-  .section.big-photo{
-    width:100%;
-    margin:0px;
-    opacity: 0;
-    }
-  .section.big-photo-mobile{
-      width:100%;
-      margin:0px;
-      opacity: 1;
-    }
-    .scroll-down{
-        bottom: 10px;
+    margin-top:100px;
+  }
